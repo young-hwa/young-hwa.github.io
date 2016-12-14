@@ -17,7 +17,7 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+    font-weight: 400;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -64,7 +64,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
+    margin-left: 0;
 }
 
 li {
@@ -93,12 +93,14 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        
     }
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
+        border-bottom: 1px solid #329af0;
+        transition: all 0.2s ease-in;
     }
 }
 

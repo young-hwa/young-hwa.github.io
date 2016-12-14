@@ -3,49 +3,9 @@
 ---
 @charset "utf-8";
 
-// San Francisco Fonts
 
-/** Ultra Light */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 100;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
-}
-
-/** Thin */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 200;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
-}
-
-/** Regular */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
-
-/** Medium */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 500;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
-}
-
-/** Semi Bold */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 600;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
-}
-
-/** Bold */ 
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 700;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
-}
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Slab');
 
 
 // Our variables
@@ -56,9 +16,9 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #212529;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #329af0;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -91,6 +51,108 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting",
-        "adhoc"
+        "syntax-highlighting"
 ;
+
+// User adhoc style 
+// FIXME: when it turned to blog style, you should delete it
+
+
+body, html {
+  height: 100%;
+}
+
+body {
+  word-break: keep-all;
+}
+
+
+// selection
+
+.main__container {
+  color: #4D5256;
+  font-family: spoqahansans, lato, 'Noto Sans KR', "Apple SD Gothic Neo", "Nanum Barun Gothic", "Nanum Gothic", Verdana, Arial, "Malgun Gothic", Dotum, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 960px;
+  min-height: 100%;
+  margin: 0 auto;
+  @media only screen and (max-width: 980px) {
+    width: 82%;
+  }
+}
+
+.main__subject_EN {
+  font-family: 'Roboto Slab', serif;
+  font-size: 34px;
+  line-height: 1.4;
+  padding-top: 70px;
+  @media only screen and (max-width: 980px) {
+    font-size: 26px;
+    padding-top: 40px;
+  }
+}
+
+.main__subject_KR {
+  font-size: 13px;
+  color: #A9AFB3;
+  line-height: 1.8;
+  margin-top: 37px;
+  margin-bottom: 78px;
+  @media only screen and (max-width: 980px) {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.main__list {
+  margin-bottom: 36px;
+}
+
+.main__list div {
+  font-size: 17px;
+  color: #A9AFB3;
+  text-transform: lowercase;
+  margin-bottom: 16px;
+  font-family: 'Roboto Slab', serif;
+  border-top: 1px solid #EAEEEF;
+  padding-top: 20px;
+}
+
+.main__list a {
+  color: #4D5256;
+  &:hover {
+    color: $text-color;
+  }
+}
+
+.main__list li {
+  list-style: none;
+  margin-left: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  @media only screen and (max-width: 980px) {
+    margin-left: 17px;
+    list-style: circle;
+  }
+}
+
+.main__list li span {
+  color: #A9AFB3;
+  padding-left: 6px;
+}
+
+.main__list__writing li {
+  font-size: 15.7px;
+  line-height: 1.8;
+}
+
+.main__footer {
+  font-size: 16px;
+  padding-bottom: 36px;
+  @media only screen and (max-width: 980px) {
+    border-top: 1px solid #EAEEEF;
+    padding-top: 20px;
+  }
+}
