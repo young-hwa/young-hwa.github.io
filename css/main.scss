@@ -89,8 +89,11 @@ body {
   line-height: 1.4;
   padding-top: 70px;
   @media only screen and (max-width: 980px) {
-    font-size: 26px;
+    font-size: 24px;
     padding-top: 40px;
+  }
+  @media only screen and (max-width: 320px) {
+    font-size: 20px;
   }
 }
 
@@ -103,6 +106,9 @@ body {
   @media only screen and (max-width: 980px) {
     font-size: 16px;
     margin-bottom: 40px;
+  }
+  @media only screen and (max-width: 320px) {
+    font-size: 14px;
   }
 }
 
