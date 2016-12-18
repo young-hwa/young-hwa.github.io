@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Younghwa Kang</title>
+    <title>Younghwa Kang | 강영화{% if page.title %} : {{ page.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ base_path }}/css/main.css">
-    <meta property="og:title" content="Younghwa Kang | 강영화">
+    <meta property="og:title" content="{{ page.title }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://youngkang.me">
     <meta property="og:site_name" content="Younghwa Kang | 강영화">
     <meta property="og:image" content="http://youngkang.me/images/opengraph.png">
+    {% if page.description %}
+    <meta property="og:description" content="{{ page.description }}">
+    {% else %}
     <meta property="og:description" content="Hello, I’m Younghwa Kang. 안녕하세요, 스포카에서 UI 디자이너로 일하는 강영화입니다.">
+    {% endif %}
     <meta property="fb:app_id" content="771526109643094" /> 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <script>
@@ -40,4 +44,3 @@
            fjs.parentNode.insertBefore(js, fjs);
          }(document, 'script', 'facebook-jssdk'));
       </script>
-      
