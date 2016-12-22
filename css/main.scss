@@ -41,6 +41,9 @@ $on-laptop:        800px;
 // post variables
 $post__desktop_margin:  210px;
 $post__desktop_width:   540px; //960px - $post__desktop_margin*2
+$post__mobile_margin:   18px;
+$post__mobile_width:    100%;
+
 
 
 @mixin wrapper {
@@ -196,26 +199,46 @@ body {
     float: right;
     color: $oc-gray-5;
   }
+  @media only screen and (max-width: 980px) {
+    width: $post__mobile_width;
+    margin: 0 0 20px;
+  }
 }
 
 .post {
   @include wrapper;
   padding: 50px 0;
+  @media only screen and (max-width: 980px) {
+    padding: 28px 0;
+  }
   p {
     font-size: 18px;
     line-height: 1.9;
     width: $post__desktop_width;
     margin: 0 $post__desktop_margin 20px;
     word-spacing: -0.07rem;
+    @media only screen and (max-width: 980px) {
+      width: $post__mobile_width;
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.8;
+    }
   }
   hr {
     width: $post__desktop_width;
     margin: 40px $post__desktop_margin;
     border: 0;
     border-top: $border-base;
+    @media only screen and (max-width: 980px) {
+      width: $post__mobile_width;
+      margin: 40px 0;
+    }
   }
   h1, h2, h3, h4, h5, h6 {
     margin: 76px 200px 32px $post__desktop_margin;
+    @media only screen and (max-width: 980px) {
+      margin: 56px 0 22px 0;
+    }
   }
   .post-title {
     margin-top: 74px;
@@ -224,18 +247,32 @@ body {
     letter-spacing: -1px;
     line-height: 1.2;
     font-weight: 700;
+    @media only screen and (max-width: 980px) {
+      margin-top: 29px;
+      margin-bottom: 12px;
+      font-size: 34px;
+      line-height: 1.3;
+    }
   }
   .post-meta {
     font-family: $sub-font-family;
     margin-bottom: 68px;
     font-size: 16px;
     color: $text-color-light;
+    @media only screen and (max-width: 980px) {
+      margin-bottom: 32px;
+    }
   }
   ol, ul {
     margin: 44px 250px 40px;
     font-size: 18px;
     line-height: 1.8;
     width: 490px;
+    @media only screen and (max-width: 980px) {
+      width: $post__mobile_width;
+      margin: 32px 0 32px 18px;
+      font-size: 17px;
+    }
   }
   li {
     margin-bottom: 8px;
@@ -246,9 +283,15 @@ body {
   }
   .post-content {
     margin-bottom: 120px;
+    @media only screen and (max-width: 980px) {
+      margin-bottom: 80px;
+    }
   }
   figure {
     margin-bottom: 40px;
+    @media only screen and (max-width: 980px) {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -256,10 +299,18 @@ body {
   display: block;
   width: $post__desktop_width;
   margin: 0 $post__desktop_margin 30px;
+  @media only screen and (max-width: 980px) {
+      width: $post__mobile_width;
+    }
+
 }
 
 .fb-comments {
   margin: 0 202px 30px;
+  @media only screen and (max-width: 980px) {
+    width: $post__mobile_width;
+    margin: 0;
+  }
 }
 
 .fb-root {
