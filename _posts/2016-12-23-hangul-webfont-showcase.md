@@ -45,7 +45,7 @@ description: 한글 웹폰트 글꼴보기집을 어떻게 만들게 되었는�
 아래 예시와 같이 글자 굵기, 정렬(오른쪽, 가운데, 왼쪽 정렬), 글자 크기, 글줄 사이, 글자 사이를 변경할 수 있습니다. 그뿐만 아니라 섹션을 클릭해 원하는 글귀를 입력할 수도 있습니다.
 
 <figure>
-    <img src='/images/sans-serif_serif.png'>
+    <img src='/images/preview.png'>
 </figure>
 
 ## 글꼴 렌더링 예시
