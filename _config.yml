@@ -12,3 +12,6 @@ github_username:  young-hwa
 
 # Build settings
 markdown: kramdown
+
+home_url: "http://youngkang.me"
+representing_image: "/images/opengraph.png"
