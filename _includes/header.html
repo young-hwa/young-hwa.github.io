@@ -5,6 +5,12 @@
     <meta property="fb:app_id" content="771526109643094" /> 
     <link rel="stylesheet" href="{{ base_path }}/css/main.css">
     <title>Younghwa Kang | 강영화{% if page.title %} : {{ page.title }}{% endif %}</title>
+    <link rel="canonical" href="{{ site.home_url }}/">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="{{ site.home_url }}/">
+    <meta property="og:site_name" content="Younghwa Kang | 강영화">
+    <meta property="og:description" content="Hello, I’m Younghwa Kang. 안녕하세요, 스포카에서 UI 디자이너로 일하는 강영화입니다.">
     <link rel="canonical" href="{{ site.home_url }}{{ page.url }}">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:type" content="blog">
@@ -16,12 +22,7 @@
     <meta property="og:description" content="Hello, I’m Younghwa Kang. 안녕하세요, 스포카에서 UI 디자이너로 일하는 강영화입니다.">
     {% endif %}
     <link rel="icon" type="image/x-icon" href=href="{{ base_path }}/images/favicon.ico" />
-    <link rel="canonical" href="{{ site.home_url }}/">
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:type" content="blog">
-    <meta property="og:url" content="{{ site.home_url }}/">
-    <meta property="og:site_name" content="Younghwa Kang | 강영화">
-    <meta property="og:description" content="Hello, I’m Younghwa Kang. 안녕하세요, 스포카에서 UI 디자이너로 일하는 강영화입니다.">
+    
     {% if page.representing_image %}
       <meta property="og:image" content="{{ site.home_url }}{{ page.representing_image }}">
     {% else %}
