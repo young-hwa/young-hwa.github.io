@@ -326,3 +326,190 @@ body {
     width: 100% !important;
   }
 }
+
+// stylesheet for portfolio.html
+.portfolio-container {
+  max-width: 780px;
+  margin: 20px auto;
+  nav {
+    text-transform: uppercase;
+    margin-top: 36px;
+    a {
+      color: $oc-gray-6;
+      margin-right: 20px;
+      margin-left: 28px;
+      &:hover {
+        border-bottom: initial;
+        color: $oc-gray-8;
+      }
+      &:nth-child(2) {
+        margin: 0;
+      } 
+    }
+  }
+  .portfolio-header {
+    margin-top: 142px;
+    h3 {
+      font-weight: 300;
+      font-size: 38px;
+      margin-bottom: 37px;
+    }
+    h3 sup {
+      font-size: 17px;
+      font-weight: 700;
+      padding-left: 6px;
+      position: relative;
+      vertical-align: baseline;
+      top: -1em;
+    }
+    p {
+      margin-bottom: 32px;
+      line-height: 1.8;
+    }
+    p a {
+      border-bottom: initial;
+      color: inherit;
+      &:hover {
+        color: $oc-gray-5;
+      }
+    }
+    .portfolio-header-description {
+      font-size: 15px;
+      color: $oc-gray-5;
+      margin-bottom: 150px;
+    }
+  }
+  .work-card {
+    margin-bottom: 90px;
+  }
+  .work-date {
+    border-bottom: 1px solid $oc-gray-3;
+    font-size: 16px;
+    padding-bottom: 6px;
+  }
+  .work-date-blue {
+    color: #4c80f1;
+  }
+  .work-date-teal {
+    color: $oc-teal-5;
+  }
+  .work-date-red {
+    color: $oc-red-5;
+  }
+  .work-title-en {
+    margin-top: 21px;
+    font-size: 32px;
+    margin-bottom: 6px;
+  }
+  .work-title-ko {
+    font-weight: 700;
+    font-size: 18px;
+    color: $oc-gray-6;
+    margin-bottom: 32px;
+  }
+  .work-img-box {
+    position: relative;
+    border: 1px solid $oc-gray-3;
+    &:hover {
+      .work-img-hover {
+        opacity: 1;
+        transition: all 0.4s ease;
+        @media (max-width: 768px) {
+          opacity: 0;
+        }
+      }
+      .work-img-hover-blue {
+        height: 450px;
+        background-image: linear-gradient(0deg, rgba(93,140,242,0.00) 10%, #5D8CF2 87%);
+      }
+      .work-img-hover-teal {
+        height: 450px;
+        background-image: linear-gradient(0deg, rgba(48,197,143,0.00) 10%, #31C58F 87%);
+      }
+      .work-img-hover-gray {
+        height: 450px;
+        background-image: linear-gradient(0deg, rgba(40,42,43,0.00) 10%, #292A2B 87%);
+      }
+    }
+  }
+  .work-img-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .work-img-text {
+    padding: 32px;
+    color: $oc-gray-1;
+    font-size: 18px;
+    a {
+      color: $oc-white;
+      font-weight: 700;
+      &:hover {
+        border-bottom: initial;
+        opacity: 0.8;
+        transition: 0.2s;
+      }
+    }
+  }
+  .about-card {
+    margin-top: 140px;
+  }
+  .about-card-main-title {
+    font-size: 28px;
+    font-weight: 700;
+    border-bottom: 1px solid $oc-gray-3;
+    padding-bottom: 4px;
+    margin-bottom: 54px;
+  }
+  .about-card-detail {
+    margin-bottom: 64px;
+  }
+  .about-card-detail p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .about-card-detail p.second-item {
+    margin-top: 30px;
+  }
+  .about-card-detail-date {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .about-card-detail-title {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .about-card-detail-jd {
+    font-size: 18px;
+    color: $oc-gray-6;
+    font-weight: 700;
+    margin-bottom:30px;
+  }
+  li {
+    margin-left: 21px;
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin: 20px;
+    nav span {
+      float: right;
+    }
+    .portfolio-header p {
+      margin-bottom: 50px;
+    }
+    .portfolio-header-description {
+      display: none;
+    }
+  }
+  @media (max-width: 480px) {
+    max-width: 100%;
+    margin: 20px;
+  }
+}
