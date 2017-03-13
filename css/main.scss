@@ -330,14 +330,14 @@ body {
 // stylesheet for portfolio.html
 .portfolio-container {
   max-width: 780px;
-  margin: 20px auto;
+  margin: 20px auto 150px;
   nav {
     text-transform: uppercase;
     margin-top: 36px;
     a {
       color: $oc-gray-6;
       margin-right: 26px;
-      margin-left: 28px;
+      margin-left: 30px;
       &:hover {
         border-bottom: initial;
         color: $oc-gray-8;
@@ -398,7 +398,7 @@ body {
   }
   .work-title-en {
     margin-top: 21px;
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 6px;
   }
   .work-title-ko {
@@ -454,7 +454,7 @@ body {
     }
   }
   .about-card {
-    margin-top: 120px;
+    margin-top: 108px;
   }
   .about-card-main-title {
     font-size: 28px;
@@ -494,7 +494,9 @@ body {
     font-size: 17px;
     margin-bottom: 4px;
   }
-
+  .work-img-text-mobile {
+    display: none;
+  }
   @media (max-width: 768px) {
     max-width: 100%;
     margin: 20px;
@@ -507,9 +509,52 @@ body {
     .portfolio-header-description {
       display: none;
     }
+    .work-img-text-mobile {
+      display: block;
+      font-size: 14px;
+      margin-top: 24px;
+      color: $oc-gray-6;
+      line-height: 1.6;
+    }
+    .work-title-en {
+      margin-top: 16px;
+      font-size: 22px;
+    }
+    .work-title-ko {
+      font-size: 16px;
+    }
+    .work-card {
+      margin-bottom: 60px;
+    }
   }
   @media (max-width: 480px) {
     max-width: 100%;
     margin: 20px;
+    body {
+      font-size: 15px;
+    }
+    .portfolio-header {
+      margin-top: 80px;
+      h3 {
+        font-size: 32px;
+        sup {
+          font-size: 15px;
+        }
+      }
+    }
+    nav a {
+      font-size: 15px;
+    }
+    li {
+      font-size: 16px;
+    }
+    .about-card {
+      margin-top: 68px;
+    }
+    .about-card-main-title {
+      font-size: 24px;
+      padding-bottom: 6px;
+      margin-bottom: 44px;
+    }
   }
 }
