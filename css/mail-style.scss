@@ -175,16 +175,17 @@ table {
 
 
 .mail-container {
-  width: 600px;
+  width: 568px;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 60px 0;
   color: #4D5256;
+  word-break: keep-all;
 }
 
 .mail-content, .mail-footer {
   font-family: sans-serif;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .mail-dodo-logo {
@@ -193,13 +194,13 @@ table {
   display: inline-block;
   width: 198px;
   height: 30px;
-  margin-bottom: 72px;
+  margin-bottom: 64px;
 }
 
 .mail-content {
   h2 {
     font-size: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     font-weight: bold;
   }
   h3 {
@@ -216,7 +217,7 @@ table {
     }
   }
   .mail-content-text-header {
-    padding-bottom: 40px;
+    padding-bottom: 36px;
   }
   .mail-content-text-group {
     padding-bottom: 28px;
@@ -228,13 +229,13 @@ table {
 
 .mail-footer {
   .mail-footer-footnote {
-    padding: 30px 0 88px;
+    padding: 28px 0 72px;
   }
   .mail-footer-footnote-border {
     width: 30px;
     height: 1px;
     background-color: #CED3D6;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
   .mail-footer-signature {
     .mail-spoqa-logo {
@@ -258,6 +259,63 @@ table {
     color: #878D91;
     b {
       font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .btn {
+    padding: 12px 16px;
+  }
+  .mail-container {
+    width: 90%;
+    padding: 24px 0;
+  }
+  .mail-content, .mail-footer {
+    font-size: 16px;
+  }
+  .mail-dodo-logo {
+    background-size: 180px 27px;
+    display: inline-block;
+    width: 180px;
+    height: 27px;
+    margin-bottom: 30px;
+  }
+  .mail-content {
+    h2 {
+      font-size: 20px;
+      padding-bottom: 16px;
+    }
+    .mail-content-text-header {
+      padding-bottom: 24px;
+    }
+    .mail-content-text-group {
+      padding-bottom: 20px;
+    }
+  }
+  .mail-footer {
+    .mail-footer-footnote-border {
+      margin-bottom: 20px;
+    }
+    .mail-footer-footnote {
+      padding: 20px 0 40px;
+    }
+    .mail-footer-signature {
+      font-size: 12px;
+      .mail-spoqa-logo {
+        background-size: 55px 16px;
+        display: inline-block;
+        width: 55px;
+        height: 16px;
+        vertical-align: bottom;
+        margin-right: 14px;
+      }
+    }
+    .mail-footer-info {
+      font-size: 12px;
+      .nl {
+        display: none;
+      }
     }
   }
 }
