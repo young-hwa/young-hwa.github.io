@@ -180,6 +180,17 @@ table {
   padding: 60px 0;
   color: #4D5256;
   word-break: keep-all;
+  b {
+    font-weight: bold;
+  }
+  a {
+    color: #4c80f1;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      color: #2c5ae9;
+    }
+  }
 }
 
 .mail-content, .mail-footer {
@@ -206,16 +217,6 @@ table {
   h3 {
     font-weight: bold;
   }
-  p {
-  }
-  a {
-    color: #4c80f1;
-    text-decoration: underline;
-    cursor: pointer;
-    &:hover {
-      color: #2c5ae9;
-    }
-  }
   .mail-content-text-header {
     padding-bottom: 36px;
   }
@@ -229,12 +230,15 @@ table {
 
 .mail-footer {
   .mail-footer-footnote {
-    padding: 28px 0 72px;
+    padding: 28px 0;
   }
   .mail-footer-footnote-border {
     width: 30px;
     height: 1px;
     background-color: #CED3D6;
+    margin-bottom: 28px;
+  }
+  .mail-footer-footnote-group {
     margin-bottom: 28px;
   }
   .mail-footer-signature {
