@@ -6,11 +6,12 @@
 
 @import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:500');
 @import '../_sass/open-color';
 
 
 // Our variables
-$base-font-family: spoqahansans, lato, 'Noto Sans KR', "Apple SD Gothic Neo", "Nanum Barun Gothic", "Nanum Gothic", Verdana, Arial, "Malgun Gothic", Dotum, sans-serif;
+$base-font-family: "spoqa han sans", spoqahansans, lato, 'Noto Sans KR', "Apple SD Gothic Neo", "Nanum Barun Gothic", "Nanum Gothic", Verdana, Arial, "Malgun Gothic", Dotum, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -348,11 +349,11 @@ body {
     }
   }
   .portfolio-header {
-    margin-top: 142px;
+    margin-top: 120px;
     h3 {
-      font-weight: 300;
-      font-size: 38px;
+      font-size: 52px;
       margin-bottom: 37px;
+      font-family: "fira mono";
     }
     h3 sup {
       font-size: 17px;
@@ -365,13 +366,6 @@ body {
     p {
       margin-bottom: 32px;
       line-height: 1.8;
-    }
-    p a {
-      border-bottom: initial;
-      color: inherit;
-      &:hover {
-        color: $oc-gray-5;
-      }
     }
     .portfolio-header-description {
       font-size: 15px;
@@ -462,6 +456,7 @@ body {
     border-bottom: 1px solid $oc-gray-3;
     padding-bottom: 4px;
     margin-bottom: 54px;
+    font-family: "fira mono";
   }
   .about-card-detail {
     margin-bottom: 64px;
@@ -477,11 +472,17 @@ body {
   .about-card-detail-date {
     font-size: 14px;
     margin-bottom: 10px;
+    font-weight: 700;
+    color: $oc-gray-6
   }
   .about-card-detail-title {
     font-size: 21px;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+    span {
+      font-weight: 400;
+      color: $oc-gray-5;
+    }
   }
   .about-card-detail-jd {
     font-size: 18px;
